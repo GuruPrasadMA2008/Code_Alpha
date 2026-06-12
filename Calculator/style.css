@@ -1,0 +1,86 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator box */
+.calculator {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.calculator h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Display screen */
+#display {
+  width: 100%;
+  padding: 12px;
+  font-size: 24px;
+  text-align: right;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* Button grid - 4 columns */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* All buttons */
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #666;
+}
+
+/* 0 button takes 2 columns */
+.zero {
+  grid-column: span 2;
+}
+
+/* Equals button - highlighted */
+.equals {
+  background-color: #ff9500;
+  color: white;
+}
+
+.equals:hover {
+  background-color: #e08800;
+}
